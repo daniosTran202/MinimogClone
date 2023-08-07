@@ -1,0 +1,2 @@
+# MinimogClone
+ HTML, CSS, JS
