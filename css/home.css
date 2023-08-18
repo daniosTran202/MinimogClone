@@ -985,10 +985,10 @@ responsive-image {
   transition: all 0.3s ease;
 }
 
-/* data-slide 1*/
+/* data-slide 3*/
 
 .flex--slide3 .flex__item--slider {
-  background: url("https://demo.minimog.co/cdn/shop/files/slide3_07a8fda3-0a82-44b9-87c2-1113d7cf9d5c.jpg?v=1689748476&width=3000");
+  background: url("../dist/images/slide3.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -998,17 +998,17 @@ responsive-image {
 /* data-slide 2 */
 
 .flex--slide2 .flex__item--slider {
-  background: url("https://demo.minimog.co/cdn/shop/files/slide2_a5ab4fc3-8682-4d6d-a53e-1b08c7fc5d05.jpg?v=1689748475&width=3000");
+  background: url("../dist/images/slide2.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   transition: background 0.3s;
 }
 
-/* data-slide 3 */
+/* data-slide 1 */
 
 .flex--slide1 .flex__item--slider {
-  background-image: url("https://demo.minimog.co/cdn/shop/files/slide1_8fe9a986-6d4f-4b10-b40d-cdd474fc2d37.jpg?v=1689748475&width=3000");
+  background-image: url("../dist/images/slide1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
