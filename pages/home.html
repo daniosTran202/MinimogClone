@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimog Shopify Themes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700"
+    />
     <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
@@ -39,10 +51,10 @@
         >
           <!-- first item -->
           <div class="flex items-center w-1/3">
-            <div class="social-media-links flex items-center px-2">
+            <div class="social-media-links flex items-center">
               <a
                 target="_blank"
-                class="px-2 flex items-center text-black"
+                class="flex items-center text-black"
                 href="https://facebook.com/"
                 rel="noreferrer"
               >
@@ -62,7 +74,7 @@
 
               <a
                 target="_blank"
-                class="px-2 flex items-center text-black"
+                class="flex items-center text-black px-3"
                 href="https://instagram.com/"
                 rel="noreferrer"
               >
@@ -96,7 +108,7 @@
           <!-- last item -->
           <div class="w-1/3 flex items-center justify-end">
             <div class="sf-language-switcher lg:py-3.5">
-              <span>English</span>
+              <span>English </span>
             </div>
 
             <div class="sf-currency-switcher lg:py-3.5"><span>USD</span> </div>
@@ -122,7 +134,7 @@
               >
                 <a
                   href="/"
-                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Home
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -145,7 +157,7 @@
               >
                 <a
                   href="/"
-                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Shop
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -168,7 +180,7 @@
               >
                 <a
                   href="/"
-                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Products
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -191,7 +203,7 @@
               >
                 <a
                   href="/"
-                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Pages
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -214,7 +226,7 @@
               >
                 <a
                   href="/"
-                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Blogs
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -237,7 +249,7 @@
               >
                 <a
                   href="/"
-                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >FoxKit
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -281,7 +293,7 @@
           <div
             class="w-5/12 flex header-icon flex-grow justify-end items-center cursor-pointer"
           >
-            <span class="sf-search-form flex items-center py-2 px-2">
+            <span class="sf-search-form flex items-center py-2 px-3">
               <span type="submit" class="py-2 px-3.5">
                 <svg
                   class="w-[18px] h-[18px]"
@@ -296,7 +308,7 @@
                 </svg>
               </span>
             </span>
-            <a href="/account" class="px-2 py-3.5 icon-header-style">
+            <a href="/account" class="px-3 py-3.5 icon-header-style">
               <span
                 class="sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
               >
@@ -315,7 +327,7 @@
             </a>
             <a
               href="/pages/wishlist"
-              class="relative px-2 py-3.5 icon-header-style"
+              class="relative px-3 py-3.5 icon-header-style"
             >
               <span
                 class="sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
@@ -336,7 +348,7 @@
             </a>
             <a
               href="/cart"
-              class="icon-header-style relative py-2 px-2 whitespace-nowrap cursor-pointer cart-icon sf-cart-icon m-cart-icon-bubble"
+              class="icon-header-style relative py-2 px-3 whitespace-nowrap cursor-pointer cart-icon sf-cart-icon m-cart-icon-bubble"
               id="m-cart-icon-bubble"
               role="button"
               aria-haspopup="dialog"
@@ -365,6 +377,547 @@
       </div>
     </div>
     <!-- #endregion -->
+    <!-- #region slider-->
+    <div class="slider__wrapper">
+      <div class="flex__container flex--slide1 flex--active" data-slide="1">
+        <div class="flex__item flex__item--slider">
+          <div class="flex__content">
+            <p class="text--sub">New Arrivals</p>
+            <h1 class="text--big">Venice Haute Couture</h1>
+            <a href="/collections/all" class="sf__btn mt-3 sf__btn-secondary"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+        <div class="flex__shopNow">
+          <div class="last-content-slide">
+            <span>The ReCotton Tee </span>
+            <span>|</span>
+            <a href="">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex__container flex--slide2 animate--start" data-slide="2">
+        <div class="flex__item flex__item--slider">
+          <div class="flex__content">
+            <p class="text--sub">New Arrivals</p>
+            <h1 class="text--big">Responsible Denim Lab</h1>
+            <a href="/collections/all" class="sf__btn mt-3 sf__btn-secondary"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+        <div class="flex__shopNow">
+          <div class="last-content-slide">
+            <span>The ReCotton Tee </span>
+            <span>|</span>
+            <a href="">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex__container flex--slide3 animate--start" data-slide="3">
+        <div class="flex__item flex__item--slider">
+          <div class="flex__content">
+            <p class="text--sub">New Arrivals</p>
+            <h1 class="text--big">Ultimate Winter Warmer</h1>
+            <a href="/collections/all" class="sf__btn mt-3 sf__btn-secondary"
+              >Shop Now</a
+            >
+          </div>
+        </div>
+        <div class="flex__shopNow">
+          <div class="last-content-slide">
+            <span>The ReCotton Tee </span>
+            <span>|</span>
+            <a href="">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider__navi">
+      <a href="#" class="slide-nav active" data-slide="1">slide1</a>
+      <a href="#" class="slide-nav" data-slide="2">slide2</a>
+      <a href="#" class="slide-nav" data-slide="3">slide3</a>
+    </div>
+    <!-- #endregion -->
+    <!-- #region new collection banners-->
+    <div
+      id="sf-custom-template--15128651661502__7ea56e8d-5794-4708-8812-8ee9604a3a21"
+      class="sf-custom sf-section-padding sf-custom--collection-banner"
+      data-section-type="custom-content"
+      data-section-id="template--15128651661502__7ea56e8d-5794-4708-8812-8ee9604a3a21"
+      style="margin-top: 200px"
+    >
+      <div class="w-full section-my">
+        <m-custom-content class="sf-custom__grid flex flex-wrap">
+          <div
+            id="sf-custom__block--template--15977492021425__7ea56e8d-5794-4708-8812-8ee9604a3a21-1678440566c64de1a8-1"
+            class="sf-custom__block sf-custom__block--image flex lg:w-1/2 w-full items-center"
+          >
+            <div class="sf-custom__block-inner w-full">
+              <div
+                class="w-full block sf-scroll-trigger animate--fade-in-up"
+                data-cascade=""
+                style="--animation-order: 0"
+              >
+                <div>
+                  <responsive-image
+                    class="sf-image"
+                    style="--aspect-ratio: 1.0666666666666667"
+                    intersecting="true"
+                  >
+                    <img
+                      src="https://demo.minimog.co/cdn/shop/files/image-card1_728526fe-fc4c-4282-bcd3-01c2a4b39e0d.jpg?v=1689825060&amp;width=360"
+                      sizes="720px"
+                      alt=""
+                      loading="lazy"
+                      class="f-img-loaded"
+                      width="720"
+                      height="675"
+                    />
+                  </responsive-image>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="sf-custom__block--5c5877d5-05b2-4a50-81e3-78c3f6d0d833"
+            class="sf-custom__block sf-custom__block--image_card flex lg:w-1/2 w-full items-"
+          >
+            <div class="sf-custom__block-inner w-full" style="width: 100%">
+              <link
+                href="//demo.minimog.co/cdn/shop/t/2/assets/image-card.css?v=157645602335072435211686278387"
+                rel="stylesheet"
+                type="text/css"
+                media="all"
+              />
+
+              <div
+                class="image-card w-full sm:max-h-full pb-0 image-card--button-fixed sf__hover-scale-up"
+              >
+                <div
+                  class="image-card__inner relative sm:overflow-hidden flex flex-col h-full w-full"
+                >
+                  <a
+                    class="image-card__img block h-full"
+                    href="/collections/all"
+                  >
+                    <responsive-image
+                      class="sf-image w-full h-full sf-image-collections"
+                      style="--aspect-ratio: 1.0666666666666667"
+                      intersecting="true"
+                    >
+                      <img
+                        src="https://demo.minimog.co/cdn/shop/files/image-card2_e266fb51-ac40-4555-98bc-76a95466110d.jpg?v=1689825060&amp;width=360"
+                        sizes="720px"
+                        alt=""
+                        loading="lazy"
+                        class="f-img-loaded cursor-pointer"
+                        width="720"
+                        height="675"
+                      />
+                    </responsive-image>
+                  </a>
+
+                  <div
+                    class="image-card__content flex z-10 pointer-events-none absolute p-5 sm:p-10 inset-0 items-start justify-center sf-scroll-trigger animate--fade-in-up"
+                    data-cascade=""
+                    style="--animation-order: 1"
+                  >
+                    <div class="image-card__content-inner text-center">
+                      <div class="image__card-heading-group">
+                        <p
+                          class="image__card-subheading text-black text-sm md:text-base mb-2"
+                          >New collection</p
+                        >
+
+                        <h3
+                          class="image__card-heading text-black text-2xl sm:text-3xl md:text-4xl mb-4"
+                          >The ReLeather<br />
+                          Tennis Shoe</h3
+                        >
+                      </div>
+
+                      <a
+                        href="/collections/all"
+                        class="pointer-events-auto sf__btn sf__btn-primary sf__btn-large text-black"
+                      >
+                        Shop new collection
+                      </a>
+
+                      <a
+                        href="/collections/all"
+                        class="pointer-events-auto sf__btn sf__btn-fixed sf__btn-large text-black"
+                      >
+                        Shop new collection
+                        <svg
+                          class="w-[14px] h-[14px]"
+                          viewBox="0 0 15 15"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.8125 0.349609C7 0.182943 7.17708 0.182943 7.34375 0.349609L13.875 6.91211C14.0625 7.07878 14.0625 7.24544 13.875 7.41211L7.34375 13.9746C7.17708 14.1413 7 14.1413 6.8125 13.9746L6.1875 13.3496C6.125 13.2871 6.09375 13.2038 6.09375 13.0996C6.09375 12.9954 6.125 12.9017 6.1875 12.8184L11.0312 7.97461H0.375C0.125 7.97461 0 7.84961 0 7.59961V6.72461C0 6.47461 0.125 6.34961 0.375 6.34961H11.0312L6.1875 1.50586C6.02083 1.31836 6.02083 1.14128 6.1875 0.974609L6.8125 0.349609Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </m-custom-content>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region  best seller-->
+
+    <!-- #endregion -->
+    <!-- #region Season Colletion-->
+    <div
+      class="container-fluild section-my"
+      style="
+        margin-top: 100px;
+        --column-gap: 30px;
+        --column-gap-mobile: 16px;
+        --row-gap: 40px;
+        --row-gap-mobile: 30px;
+        --items: 3;
+      "
+    >
+      <div class="section__header text-center">
+        <h2 class="section__heading sf-scroll-trigger animate--fade-in-up"
+          >Season Collection</h2
+        >
+      </div>
+
+      <div class="relative sf__ms">
+        <div
+          class="sf-grid sf__ms-wrapper md:grid md:grid-cols-2 lg:grid-cols-3"
+        >
+          <div class="sf-column">
+            <div
+              class="sf-icon-box sf-icon-box--vertical sf__hover-scale-up sf-scroll-trigger animate--fade-in-up"
+              data-cascade=""
+              style="--animation-order: 0"
+            >
+              <div
+                class="sf-icon-box__inner flex flex-col items-center sm:items-start"
+              >
+                <div
+                  class="sf-icon-box__icon w-full flex shrink-0 justify-center max-w-full md:mb-0 sf-image--loaded items-start"
+                  style="width: 100%"
+                >
+                  <responsive-image
+                    class="sf-image w-full zoom-image"
+                    width="100%"
+                    style="--aspect-ratio: 0.8"
+                    intersecting="true"
+                  >
+                    <img
+                      src="https://demo.minimog.co/cdn/shop/files/box1.jpg?v=1689749038&amp;width=360"
+                      sizes="420px"
+                      alt=""
+                      loading="lazy"
+                      class="w-full f-img-loaded"
+                      width="425"
+                      height="532"
+                    />
+                  </responsive-image>
+                </div>
+                <div class="md:mt-5 sf-icon-box__text flex-1 text-left">
+                  <h3 class="h4 mb-4 font-medium">The Cashmere Cardigan</h3>
+
+                  <div class="rte text-color-subtext"
+                    ><p>Add a free personalized note during checkout.</p></div
+                  >
+
+                  <a
+                    href="/collections/all"
+                    class="sf__btn mt-5 sf__btn-secondary"
+                    >Shop Cardigans</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sf-column">
+            <div
+              class="sf-icon-box sf-icon-box--vertical sf__hover-scale-up sf-scroll-trigger animate--fade-in-up"
+              data-cascade=""
+              style="--animation-order: 1"
+            >
+              <div
+                class="sf-icon-box__inner flex flex-col items-center sm:items-start"
+              >
+                <div
+                  class="sf-icon-box__icon w-full flex shrink-0 justify-center max-w-full md:mb-0 sf-image--loaded items-start"
+                  style="width: 100%"
+                >
+                  <responsive-image
+                    class="sf-image w-full zoom-image"
+                    style="--aspect-ratio: 0.8"
+                    intersecting="true"
+                  >
+                    <img
+                      src="https://demo.minimog.co/cdn/shop/files/box2.jpg?v=1689749038&amp;width=360"
+                      sizes="425px"
+                      alt=""
+                      loading="lazy"
+                      class="w-full f-img-loaded"
+                      width="425"
+                      height="532"
+                    />
+                  </responsive-image>
+                </div>
+                <div class="md:mt-5 sf-icon-box__text flex-1 text-left">
+                  <h3 class="h4 mb-4 font-medium">The Italian Chelsea Boot</h3>
+
+                  <div class="rte text-color-subtext"
+                    ><p>Brittany Bathgate shows how less is more.</p></div
+                  >
+
+                  <a
+                    href="/collections/all"
+                    class="sf__btn mt-5 sf__btn-secondary"
+                    >Shop bags</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sf-column">
+            <div
+              class="sf-icon-box sf-icon-box--vertical sf__hover-scale-up sf-scroll-trigger animate--fade-in-up"
+              data-cascade=""
+              style="--animation-order: 2"
+            >
+              <div
+                class="sf-icon-box__inner flex flex-col items-center sm:items-start"
+              >
+                <div
+                  class="sf-icon-box__icon w-full flex shrink-0 justify-center max-w-full md:mb-0 sf-image--loaded items-start"
+                  style="width: 100%"
+                >
+                  <responsive-image
+                    class="sf-image w-full zoom-image"
+                    style="--aspect-ratio: 0.8"
+                    intersecting="true"
+                  >
+                    <img
+                      src="https://demo.minimog.co/cdn/shop/files/box3.jpg?v=1689749038&amp;width=360"
+                      sizes="425px"
+                      alt=""
+                      loading="lazy"
+                      class="w-full f-img-loaded"
+                      width="425"
+                      height="532"
+                    />
+                  </responsive-image>
+                </div>
+                <div class="md:mt-5 sf-icon-box__text flex-1 text-left">
+                  <h3 class="h4 mb-4 font-medium">Transit Fanny Pack</h3>
+
+                  <div class="rte text-color-subtext"
+                    ><p>Brittany Bathgate shows how less is more.</p></div
+                  >
+
+                  <a
+                    href="/collections/all"
+                    class="sf__btn mt-5 sf__btn-secondary"
+                    >Shop Shirts</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region  Follow Us IG-->
+    <section
+      id="sf__instagram-template--15128651661502__11cfb44f-b725-4daf-8ee7-4bbf2c63914d"
+      class="sf-instagram sf-section-padding"
+      data-section-type="instagram"
+      data-section-id="template--15128651661502__11cfb44f-b725-4daf-8ee7-4bbf2c63914d"
+      data-layout="grid"
+      style="
+        margin-top: 200px;
+        background-color: rgba(0, 0, 0, 0);
+        --section-padding-top: 0px;
+        --section-padding-bottom: 0px;
+      "
+    >
+      <div
+        class="container-fluild section-my"
+        style="
+          --column-gap: 30px;
+          --row-gap: 30px;
+          --row-gap-mobile: 10px;
+          --column-gap-mobile: 10px;
+        "
+      >
+        <div class="section__header text-center">
+          <h2 class="section__heading sf-scroll-trigger animate--fade-in-up"
+            >Follow us Instagram</h2
+          >
+
+          <div
+            class="section__description rte sf-scroll-trigger animate--fade-in-up"
+            >Tag <span class="text-black">@minimog</span> in your Instagram
+            photos for a chance to be featured here.<br />
+            Find more inspiration on <a href="#">our Instagram.</a></div
+          >
+        </div>
+
+        <m-instagram
+          class="sf-instagram__wrapper"
+          data-access-token="IGQVJWVXZA3T1Q5NGJSQnlySUtqbnJIM2VQb20yWjFxWWR0NTl2YjBxZAXdJZAXVPY0pNb2ptdVVuNVlkNXVLWGlYclhUeFAyWGVVMXQyOU80VEdIekFyV0RrSlRQbnJvcXV1WkhYREktcDVfeXQzMEtKbQZDZD"
+          data-images-count="5"
+        >
+          <div class="sf__ms">
+            <div
+              class="sf__ms-wrapper instagram-images sf-grid grid-template--15128651661502__11cfb44f-b725-4daf-8ee7-4bbf2c63914d md:grid md:grid-cols-3 xl:grid-cols-5"
+            >
+              <div class="sf-column"
+                ><a
+                  href="https://www.instagram.com/p/CRaVPc_JHuw/"
+                  target="_blank"
+                  class="sf__insta-item block relative"
+                  ><div
+                    class="sf__insta-content absolute z-10 inset-0 flex items-center justify-center"
+                    ><div class="sf__insta-icon"
+                      ><svg
+                        class="w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        ></path></svg></div></div
+                  ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
+                    ><img
+                      class="transition-opacity opacity-0 opacity-100"
+                      src="https://scontent.cdninstagram.com/v/t51.29350-15/217926089_1019062702169975_5096785639988493071_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=EqIMASaNgiIAX_EZPJs&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfABxqKKFi0zK9t0wqK7tNxveDNQO0GUS6g7XHbCv-ZgYA&amp;oe=64D99040&amp;width=300"
+                      loading="lazy"
+                      alt="instagram-image-minimog.main3-18174383935131203"
+                      style="" /></div
+                  ><div class="sf__item-bg"></div></a></div
+              ><div class="sf-column"
+                ><a
+                  href="https://www.instagram.com/p/CRIcARRpqVG/"
+                  target="_blank"
+                  class="sf__insta-item block relative"
+                  ><div
+                    class="sf__insta-content absolute z-10 inset-0 flex items-center justify-center"
+                    ><div class="sf__insta-icon"
+                      ><svg
+                        class="w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        ></path></svg></div></div
+                  ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
+                    ><img
+                      class="transition-opacity opacity-0 opacity-100"
+                      src="https://scontent.cdninstagram.com/v/t51.29350-15/211450977_195298149203961_4889202603346592073_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=RmAmiGmhV0QAX89OVnh&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBjeFnJHAbbfECAB1Br-Lm40OcXPeJCFMXROta0VSPmdw&amp;oe=64DA4CA6&amp;width=300"
+                      loading="lazy"
+                      alt="instagram-image-minimog.main3-17864310278540206"
+                      style="" /></div
+                  ><div class="sf__item-bg"></div></a></div
+              ><div class="sf-column"
+                ><a
+                  href="https://www.instagram.com/p/CRIb-JJJlDG/"
+                  target="_blank"
+                  class="sf__insta-item block relative"
+                  ><div
+                    class="sf__insta-content absolute z-10 inset-0 flex items-center justify-center"
+                    ><div class="sf__insta-icon"
+                      ><svg
+                        class="w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        ></path></svg></div></div
+                  ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
+                    ><img
+                      class="transition-opacity opacity-0 opacity-100"
+                      src="https://scontent.cdninstagram.com/v/t51.29350-15/212689908_514294163022464_2501558870236423530_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=rQnZH-cPIKEAX-390oi&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCTNSFrjVviecFo85rtBVB4URvyzGRxKmwHf6JslmzMCQ&amp;oe=64D9E76A&amp;width=300"
+                      loading="lazy"
+                      alt="instagram-image-minimog.main3-18164038645147528"
+                      style="" /></div
+                  ><div class="sf__item-bg"></div></a></div
+              ><div class="sf-column"
+                ><a
+                  href="https://www.instagram.com/p/CRIb75JJunK/"
+                  target="_blank"
+                  class="sf__insta-item block relative"
+                  ><div
+                    class="sf__insta-content absolute z-10 inset-0 flex items-center justify-center"
+                    ><div class="sf__insta-icon"
+                      ><svg
+                        class="w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        ></path></svg></div></div
+                  ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
+                    ><img
+                      class="transition-opacity opacity-0 opacity-100"
+                      src="https://scontent.cdninstagram.com/v/t51.29350-15/212393793_128297782785197_7412881403264669135_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=GK6Pz9knzzQAX8ipYFe&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBt_ePNMz1MQZOF_Ilv0jzzkas-66_FBihTJAN_tDBw6g&amp;oe=64DA8DEB&amp;width=300"
+                      loading="lazy"
+                      alt="instagram-image-minimog.main3-17995552492355459"
+                      style="" /></div
+                  ><div class="sf__item-bg"></div></a></div
+              ><div class="sf-column"
+                ><a
+                  href="https://www.instagram.com/p/CRIb5xOpM4i/"
+                  target="_blank"
+                  class="sf__insta-item block relative"
+                  ><div
+                    class="sf__insta-content absolute z-10 inset-0 flex items-center justify-center"
+                    ><div class="sf__insta-icon"
+                      ><svg
+                        class="w-10 h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        ></path></svg></div></div
+                  ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
+                    ><img
+                      class="transition-opacity opacity-0 opacity-100"
+                      src="https://scontent.cdninstagram.com/v/t51.29350-15/212524229_4101822023272462_1544893675996977246_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ngA-VIAWgZoAX-W3q1q&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBF653AwT3p3sGe1wT_vEy3bH4yeC1AsW9lcjDqHKrI1Q&amp;oe=64D97666&amp;width=300"
+                      loading="lazy"
+                      alt="instagram-image-minimog.main3-17844069482619545" /></div
+                  ><div class="sf__item-bg"></div></a></div
+            ></div>
+          </div>
+        </m-instagram>
+      </div>
+    </section>
+    <!-- #endregion -->
+
+    <!-- #region footer related-->
     <section
       class="sf-icon-box sf-section-padding sf-home__iconbox"
       style="margin-top: 200px"
@@ -386,7 +939,7 @@
                 />
               </div>
               <div class="sf-icon-box__text flex-1 text-left mb-1">
-                <h3 class="h4 font-medium">Free Shipping</h3>
+                <h4 class="mb-1.5 font-medium">Free Shipping</h4>
 
                 <div class="rte text-color-subtext"
                   ><p>Free Shipping for orders over £130</p></div
@@ -407,7 +960,7 @@
                 />
               </div>
               <div class="sf-icon-box__text flex-1 text-left mb-1">
-                <h3 class="h4 font-medium">Money Guarantee</h3>
+                <h4 class="mb-1.5 font-medium">Money Guarantee</h4>
 
                 <div class="rte text-color-subtext"
                   ><p>Within 30 days for an exchange.</p></div
@@ -428,7 +981,7 @@
                 />
               </div>
               <div class="sf-icon-box__text flex-1 text-left mb-1">
-                <h3 class="h4 font-medium">Online Support</h3>
+                <h4 class="mb-1.5 font-medium">Online Support</h4>
 
                 <div class="rte text-color-subtext"
                   ><p>24 hours a day, 7 days a week</p></div
@@ -449,7 +1002,7 @@
                 />
               </div>
               <div class="sf-icon-box__text flex-1 text-left mb-1">
-                <h3 class="h4 font-medium">Flexible Payment</h3>
+                <h4 class="mb-1.5 font-medium">Flexible Payment</h4>
 
                 <div class="rte text-color-subtext"
                   ><p>Pay with Multiple Credit Cards</p></div
@@ -476,7 +1029,7 @@
               style="--animation-order: 0"
             >
               <h3
-                class="font-medium mb-4 text-base sf__accordion-button sf__footer-block-title"
+                class="font-medium mb-5 text-base sf__accordion-button sf__footer-block-title"
                 >Let’s get in touch</h3
               >
 
@@ -491,7 +1044,7 @@
                   <div
                     ><form
                       method="post"
-                      action='/contact#contact-form__{{ "now" | date: "%L" }}'
+                      action=""
                       id='contact-form__{{ "now" | date: "%L" }}'
                       accept-charset="UTF-8"
                       class="sf__footer-form-newsletter form__style-bordered"
@@ -505,7 +1058,7 @@
                         name="contact[tags]"
                         value="newsletter"
                       />
-                      <div class="relative">
+                      <div class="relative mt-4">
                         <input
                           type="email"
                           required=""
@@ -656,10 +1209,8 @@
               <div class="sf__accordion-content rte sf__footer-block-content">
                 <div class="pb-5 md:pb-0">
                   <div class="block-text mt-4">
-                    <!-- /snippets/social-media-links.liquid -->
-
                     <div
-                      class="social-media-links mt-6 -mx-2 flex items-center"
+                      class="social-media-links mt-5 -mx-2 flex items-center"
                     >
                       <a
                         target="_blank"
@@ -748,10 +1299,10 @@
     >
       <div class="container-fluid">
         <div
-          class="sf__footer-bottom-inner lg:pb-8 pt-0 lg:py-5 flex flex-col lg:flex-row justify-between items-center"
+          class="sf__footer-bottom-inner lg:pb-8 pt-0 lg:py-5 flex lg:flex-row justify-between items-center"
         >
           <div
-            class="sf-footer__left flex-1 text-center w-full md:text-left mb-6 lg:mb-0 lg:w-auto lg:order-none sf-scroll-trigger animate--fade-in-up"
+            class="sf-footer__left text-center w-full md:text-left mb-6 lg:mb-0 lg:w-auto lg:order-none sf-scroll-trigger animate--fade-in-up"
           >
             <span class="text-sm text-left">© MINIMOG 2023</span></div
           >
@@ -978,6 +1529,8 @@
         </div>
       </div>
     </div>
+    <!-- #endregion -->
   </body>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="../js/home.js"></script>
 </html>
