@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --fluid-container-width: 1620px;
+  --fluid-container-offset: 65px;
+}
+
 /* :root {
   --font-stack-body: "SF-Body-font";
   --font-weight-body: 400;
@@ -58,13 +63,20 @@ a {
     width: 20%;
   }
   .sf-footer-bottom--fade-in-up .sf__footer-bottom-inner {
-    padding: 2rem 3rem;
+    padding: 20px 0 56px;
   }
   .lg\:pb-8 {
     padding-bottom: 2rem;
   }
   .lg\:justify-start {
     justify-content: flex-start;
+  }
+
+  .rte p {
+    list-style: 15px;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    font-weight: 300;
   }
 }
 
@@ -165,6 +177,9 @@ ul {
 
 .pr-4 {
   padding-right: 1rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .pr-6 {
   padding-right: 1.5rem;
@@ -377,14 +392,19 @@ video {
   color: #000000;
 }
 
-.container-fluild {
+.container-fluid {
   width: 100%;
-  --offset-x: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(var(--fluid-container-width, 1620px) + var(--offset-x) * 2);
-  padding-left: 52px;
-  padding-right: 52px;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: calc(
+    var(--fluid-container-width, 1620px) + var(--fluid-container-offset) * 2
+  );
+}
+
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .sf-currency-switcher,
@@ -440,7 +460,7 @@ video {
 }
 
 .box-parents {
-  padding: 2rem 2rem;
+  padding: 2.35rem 0;
 }
 .text-color-subtext {
   color: #666666;
@@ -470,7 +490,7 @@ video {
 }
 
 .sf-footer__accordion {
-  padding: 3rem 0;
+  padding: 80px 0;
 }
 
 .sf-footer .sf__footer-block-content,
@@ -837,6 +857,7 @@ responsive-image {
 .slider__navi {
   position: absolute;
   top: 50%;
+  bottom: 50%;
   right: 52px;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -988,6 +1009,7 @@ responsive-image {
 /* data-slide 3*/
 
 .flex--slide3 .flex__item--slider {
+  width: 100%;
   background: url("../dist/images/slide3.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -998,6 +1020,7 @@ responsive-image {
 /* data-slide 2 */
 
 .flex--slide2 .flex__item--slider {
+  width: 100%;
   background: url("../dist/images/slide2.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1008,6 +1031,7 @@ responsive-image {
 /* data-slide 1 */
 
 .flex--slide1 .flex__item--slider {
+  width: 100%;
   background-image: url("../dist/images/slide1.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1048,7 +1072,7 @@ responsive-image {
 /* season collection */
 
 @media screen and (min-width: 1024px) {
-  .container-fluild {
+  .container-fluid {
     --offset-x: calc(var(--fluid-container-offset, 6rem) / 1.25);
   }
 }
@@ -1079,6 +1103,7 @@ responsive-image {
   flex-shrink: 0;
 }
 .sf-icon-box__icon {
+  width: 100%;
   overflow: hidden;
 }
 .flex-1 {

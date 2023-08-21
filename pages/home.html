@@ -45,7 +45,7 @@
 
     <!-- topbar start -->
     <div class="topbar relative">
-      <div class="container-fluild lh40">
+      <div class="container-fluid lh40">
         <div
           class="topbar_content flex justify-between items-center text-[15px]"
         >
@@ -54,7 +54,7 @@
             <div class="social-media-links flex items-center">
               <a
                 target="_blank"
-                class="flex items-center text-black"
+                class="flex items-center text-black px-4"
                 href="https://facebook.com/"
                 rel="noreferrer"
               >
@@ -74,7 +74,7 @@
 
               <a
                 target="_blank"
-                class="flex items-center text-black px-3"
+                class="flex items-center text-black px-4"
                 href="https://instagram.com/"
                 rel="noreferrer"
               >
@@ -120,7 +120,7 @@
 
     <!-- header wrapper start -->
     <div class="header_wrapper absolute">
-      <div class="container-fluild">
+      <div class="container-fluid">
         <div class="sf-menu-logo-bar flex items-center">
           <!--  -->
           <div
@@ -134,7 +134,7 @@
               >
                 <a
                   href="/"
-                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Home
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -157,7 +157,7 @@
               >
                 <a
                   href="/"
-                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Shop
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -180,7 +180,7 @@
               >
                 <a
                   href="/"
-                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Products
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -203,7 +203,7 @@
               >
                 <a
                   href="/"
-                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Pages
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -226,7 +226,7 @@
               >
                 <a
                   href="/"
-                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >Blogs
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -249,7 +249,7 @@
               >
                 <a
                   href="/"
-                  class="block pr-6 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
+                  class="block px-4 py-5 sf__sub-menu-link1 flex items-center sf__parent-item text-black"
                   >FoxKit
                   <span class="ml-2 sf-menu__arrow">
                     <svg
@@ -444,39 +444,38 @@
     <!-- #region new collection banners-->
     <div
       id="sf-custom-template--15128651661502__7ea56e8d-5794-4708-8812-8ee9604a3a21"
-      class="sf-custom sf-section-padding sf-custom--collection-banner"
+      class="sf-custom sf-section-padding sf-custom--collection-banner container-full"
       data-section-type="custom-content"
       data-section-id="template--15128651661502__7ea56e8d-5794-4708-8812-8ee9604a3a21"
       style="margin-top: 200px"
     >
-      <div class="w-full section-my">
+      <div class="section-my">
         <m-custom-content class="sf-custom__grid flex flex-wrap">
           <div
             id="sf-custom__block--template--15977492021425__7ea56e8d-5794-4708-8812-8ee9604a3a21-1678440566c64de1a8-1"
             class="sf-custom__block sf-custom__block--image flex lg:w-1/2 w-full items-center"
           >
-            <div class="sf-custom__block-inner w-full">
+            <div class="sf-custom__block-inner w-full" style="width: 100%">
               <div
                 class="w-full block sf-scroll-trigger animate--fade-in-up"
                 data-cascade=""
                 style="--animation-order: 0"
               >
                 <div>
-                  <responsive-image
+                  <div
                     class="sf-image"
                     style="--aspect-ratio: 1.0666666666666667"
                     intersecting="true"
                   >
                     <img
                       src="../dist/images/banner1.png"
-                      sizes="720px"
                       alt=""
                       loading="lazy"
                       class="f-img-loaded"
-                      width="720"
+                      width="100%"
                       height="675"
                     />
-                  </responsive-image>
+                  </div>
                 </div>
               </div>
             </div>
@@ -504,21 +503,20 @@
                     class="image-card__img block h-full"
                     href="/collections/all"
                   >
-                    <responsive-image
+                    <div
                       class="sf-image w-full h-full sf-image-collections"
                       style="--aspect-ratio: 1.0666666666666667"
                       intersecting="true"
                     >
                       <img
                         src="../dist/images/banner2.png"
-                        sizes="720px"
                         alt=""
                         loading="lazy"
                         class="f-img-loaded cursor-pointer"
-                        width="720"
+                        width="100%"
                         height="675"
                       />
-                    </responsive-image>
+                    </div>
                   </a>
 
                   <div
@@ -539,13 +537,6 @@
                           Tennis Shoe</h3
                         >
                       </div>
-
-                      <a
-                        href="/collections/all"
-                        class="pointer-events-auto sf__btn sf__btn-primary sf__btn-large text-black"
-                      >
-                        Shop new collection
-                      </a>
 
                       <a
                         href="/collections/all"
@@ -578,7 +569,7 @@
     <!-- #endregion -->
     <!-- #region Season Colletion-->
     <div
-      class="container-fluild section-my"
+      class="container-fluid section-my"
       style="
         margin-top: 100px;
         --column-gap: 30px;
@@ -611,7 +602,7 @@
                   class="sf-icon-box__icon w-full flex shrink-0 justify-center max-w-full md:mb-0 sf-image--loaded items-start"
                   style="width: 100%"
                 >
-                  <responsive-image
+                  <div
                     class="sf-image w-full zoom-image"
                     width="100%"
                     style="--aspect-ratio: 0.8"
@@ -623,10 +614,10 @@
                       alt=""
                       loading="lazy"
                       class="w-full f-img-loaded"
-                      width="425"
+                      width="100%"
                       height="532"
                     />
-                  </responsive-image>
+                  </div>
                 </div>
                 <div class="md:mt-5 sf-icon-box__text flex-1 text-left">
                   <h3 class="h4 mb-4 font-medium">The Cashmere Cardigan</h3>
@@ -658,7 +649,7 @@
                   class="sf-icon-box__icon w-full flex shrink-0 justify-center max-w-full md:mb-0 sf-image--loaded items-start"
                   style="width: 100%"
                 >
-                  <responsive-image
+                  <div
                     class="sf-image w-full zoom-image"
                     style="--aspect-ratio: 0.8"
                     intersecting="true"
@@ -669,10 +660,10 @@
                       alt=""
                       loading="lazy"
                       class="w-full f-img-loaded"
-                      width="425"
+                      width="100%"
                       height="532"
                     />
-                  </responsive-image>
+                  </div>
                 </div>
                 <div class="md:mt-5 sf-icon-box__text flex-1 text-left">
                   <h3 class="h4 mb-4 font-medium">The Italian Chelsea Boot</h3>
@@ -704,7 +695,7 @@
                   class="sf-icon-box__icon w-full flex shrink-0 justify-center max-w-full md:mb-0 sf-image--loaded items-start"
                   style="width: 100%"
                 >
-                  <responsive-image
+                  <div
                     class="sf-image w-full zoom-image"
                     style="--aspect-ratio: 0.8"
                     intersecting="true"
@@ -715,10 +706,10 @@
                       alt=""
                       loading="lazy"
                       class="w-full f-img-loaded"
-                      width="425"
+                      width="100%"
                       height="532"
                     />
-                  </responsive-image>
+                  </div>
                 </div>
                 <div class="md:mt-5 sf-icon-box__text flex-1 text-left">
                   <h3 class="h4 mb-4 font-medium">Transit Fanny Pack</h3>
@@ -756,7 +747,7 @@
       "
     >
       <div
-        class="container-fluild section-my"
+        class="container-fluid section-my"
         style="
           --column-gap: 30px;
           --row-gap: 30px;
@@ -926,7 +917,7 @@
         <div class="relative">
           <div class="flex items-center box-parents">
             <div class="flex box-chilrend w-1/4 flex-row flex-nowrap">
-              <div class="image-left px-3 flex items-center">
+              <div class="image-left pr-5 flex items-center">
                 <img
                   srcset="../dist/images/box1-footer.png"
                   src="../dist/images/box1-footer.png"
@@ -947,7 +938,7 @@
               </div>
             </div>
             <div class="flex box-chilrend w-1/4">
-              <div class="image-left px-3 flex items-center justify-between">
+              <div class="image-left pr-5 flex items-center justify-between">
                 <img
                   srcset="../dist/images/box2-footer.png"
                   src="../dist/images/box2-footer.png"
@@ -968,7 +959,7 @@
               </div>
             </div>
             <div class="flex box-chilrend w-1/4">
-              <div class="image-left px-3 flex items-center justify-between">
+              <div class="image-left pr-5 flex items-center justify-between">
                 <img
                   srcset="../dist/images/box3-footer.png"
                   src="../dist/images/box3-footer.png"
@@ -989,7 +980,7 @@
               </div>
             </div>
             <div class="flex box-chilrend w-1/4">
-              <div class="image-left px-3 flex items-center justify-between">
+              <div class="image-left pr-5 flex items-center justify-between">
                 <img
                   srcset="../dist/images/box4-footer.png"
                   src="../dist/images/box4-footer.png"
@@ -1016,15 +1007,15 @@
     <div
       class="footer-layout sf__footer-bottom md:mt-0 sf-footer-bottom--fade-in-up"
     >
-      <div class="container-fluild footer-infor">
+      <div class="container-fluid footer-infor">
         <div
-          class="sf-footer__accordion flex flex-wrap lg:flex-nowrap -mx-4 lg:-mx-5"
+          class="sf-footer__accordion flex flex-wrap lg:flex-nowrap lg:-mx-5"
         >
           <div
             class="sf-footer__block sf__accordion-item open sf__footer-block-newsletter w-full lg:w-1/3 order-first md:order-none"
           >
             <div
-              class="sf-footer__block-inner px-4 lg:px-5 sf-scroll-trigger animate--fade-in-up"
+              class="sf-footer__block-inner lg:px-5 sf-scroll-trigger animate--fade-in-up"
               data-cascade=""
               style="--animation-order: 0"
             >
