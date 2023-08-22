@@ -54,7 +54,7 @@
             <div class="social-media-links flex items-center">
               <a
                 target="_blank"
-                class="flex items-center text-black px-4"
+                class="flex items-center text-black"
                 href="https://facebook.com/"
                 rel="noreferrer"
               >
@@ -69,7 +69,7 @@
                   ></path>
                 </svg>
 
-                <span class="pl-2.5 pr-4">300k Followers</span>
+                <span class="social-media-links--label">300k Followers</span>
               </a>
 
               <a
@@ -89,7 +89,7 @@
                   ></path>
                 </svg>
 
-                <span class="pl-2.5 pr-4">100k Followers</span>
+                <span class="social-media-links--label">100k Followers</span>
               </a>
             </div>
 
@@ -107,11 +107,13 @@
           ></div>
           <!-- last item -->
           <div class="w-1/3 flex items-center justify-end">
-            <div class="sf-language-switcher lg:py-3.5">
+            <div class="m-switcher-dropdown sf-language-switcher lg:py-3.5">
               <span>English </span>
             </div>
 
-            <div class="sf-currency-switcher lg:py-3.5"><span>USD</span> </div>
+            <div class="m-switcher-dropdown sf-currency-switcher lg:py-3.5"
+              ><span>USD</span>
+            </div>
           </div></div
         >
       </div>
@@ -119,7 +121,7 @@
     <!-- topbar end -->
 
     <!-- header wrapper start -->
-    <div class="header_wrapper absolute">
+    <div class="header_wrapper relative">
       <div class="container-fluid">
         <div class="sf-menu-logo-bar flex items-center">
           <!--  -->
@@ -272,7 +274,7 @@
           <!--  -->
 
           <!-- #region logo-->
-          <h1 class="sf-logo px-4 w-1/6 flex justify-center">
+          <h1 class="sf-logo w-1/6 flex justify-center">
             <a
               href="/"
               class="block logo-img relative"
@@ -294,7 +296,7 @@
             class="w-5/12 flex header-icon flex-grow justify-end items-center cursor-pointer"
           >
             <span class="sf-search-form flex items-center py-2 px-3">
-              <span type="submit" class="py-2 px-3.5">
+              <span type="submit" class="m-tooltip">
                 <svg
                   class="w-[18px] h-[18px]"
                   fill="currentColor"
@@ -310,7 +312,7 @@
             </span>
             <a href="/account" class="px-3 py-3.5 icon-header-style">
               <span
-                class="sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
+                class="m-tooltip sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
               >
                 <svg
                   class="w-[20px] h-[20px]"
@@ -330,7 +332,7 @@
               class="relative px-3 py-3.5 icon-header-style"
             >
               <span
-                class="sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
+                class="m-tooltip sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
               >
                 <svg
                   class="w-[20px] h-[20px]"
@@ -354,7 +356,7 @@
               aria-haspopup="dialog"
             >
               <span
-                class="sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
+                class="m-tooltip sf__tooltip-item block sf__tooltip-bottom sf__tooltip-style-2"
               >
                 <svg
                   class="w-[20px] h-[20px]"
@@ -378,9 +380,9 @@
     </div>
     <!-- #endregion -->
     <!-- #region slider-->
-    <div class="slider__wrapper">
+    <div class="slider__wrapper container-full relative">
       <div class="flex__container flex--slide1 flex--active" data-slide="1">
-        <div class="flex__item flex__item--slider">
+        <div class="flex__item flex__item--slider container-fluid">
           <div class="flex__content">
             <p class="text--sub">New Arrivals</p>
             <h1 class="text--big">Venice Haute Couture</h1>
@@ -389,7 +391,7 @@
             >
           </div>
         </div>
-        <div class="flex__shopNow">
+        <div class="flex__shopNow container-fluid">
           <div class="last-content-slide">
             <span>The ReCotton Tee </span>
             <span>|</span>
@@ -398,7 +400,7 @@
         </div>
       </div>
       <div class="flex__container flex--slide2 animate--start" data-slide="2">
-        <div class="flex__item flex__item--slider">
+        <div class="flex__item flex__item--slider container-fluid">
           <div class="flex__content">
             <p class="text--sub">New Arrivals</p>
             <h1 class="text--big">Responsible Denim Lab</h1>
@@ -407,7 +409,7 @@
             >
           </div>
         </div>
-        <div class="flex__shopNow">
+        <div class="flex__shopNow container-fluid">
           <div class="last-content-slide">
             <span>The ReCotton Tee </span>
             <span>|</span>
@@ -416,7 +418,7 @@
         </div>
       </div>
       <div class="flex__container flex--slide3 animate--start" data-slide="3">
-        <div class="flex__item flex__item--slider">
+        <div class="flex__item flex__item--slider container-fluid">
           <div class="flex__content">
             <p class="text--sub">New Arrivals</p>
             <h1 class="text--big">Ultimate Winter Warmer</h1>
@@ -425,7 +427,7 @@
             >
           </div>
         </div>
-        <div class="flex__shopNow">
+        <div class="flex__shopNow container-fluid">
           <div class="last-content-slide">
             <span>The ReCotton Tee </span>
             <span>|</span>
@@ -433,13 +435,13 @@
           </div>
         </div>
       </div>
+      <div class="slider__navi absolute">
+        <a href="#" class="slide-nav active" data-slide="1">slide1</a>
+        <a href="#" class="slide-nav" data-slide="2">slide2</a>
+        <a href="#" class="slide-nav" data-slide="3">slide3</a>
+      </div>
     </div>
 
-    <div class="slider__navi">
-      <a href="#" class="slide-nav active" data-slide="1">slide1</a>
-      <a href="#" class="slide-nav" data-slide="2">slide2</a>
-      <a href="#" class="slide-nav" data-slide="3">slide3</a>
-    </div>
     <!-- #endregion -->
     <!-- #region new collection banners-->
     <div
@@ -797,10 +799,9 @@
                   ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
                     ><img
                       class="transition-opacity opacity-0 opacity-100"
-                      src="https://scontent.cdninstagram.com/v/t51.29350-15/217926089_1019062702169975_5096785639988493071_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=EqIMASaNgiIAX_EZPJs&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfABxqKKFi0zK9t0wqK7tNxveDNQO0GUS6g7XHbCv-ZgYA&amp;oe=64D99040&amp;width=300"
+                      src="../dist/images/follow-ig1.png"
                       loading="lazy"
-                      alt="instagram-image-minimog.main3-18174383935131203"
-                      style="" /></div
+                      alt="instagram-image-minimog.main3-18174383935131203" /></div
                   ><div class="sf__item-bg"></div></a></div
               ><div class="sf-column"
                 ><a
@@ -822,10 +823,9 @@
                   ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
                     ><img
                       class="transition-opacity opacity-0 opacity-100"
-                      src="https://scontent.cdninstagram.com/v/t51.29350-15/211450977_195298149203961_4889202603346592073_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=RmAmiGmhV0QAX89OVnh&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBjeFnJHAbbfECAB1Br-Lm40OcXPeJCFMXROta0VSPmdw&amp;oe=64DA4CA6&amp;width=300"
+                      src="../dist/images/follow-ig2.png"
                       loading="lazy"
-                      alt="instagram-image-minimog.main3-17864310278540206"
-                      style="" /></div
+                      alt="instagram-image-minimog.main3-17864310278540206" /></div
                   ><div class="sf__item-bg"></div></a></div
               ><div class="sf-column"
                 ><a
@@ -847,10 +847,9 @@
                   ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
                     ><img
                       class="transition-opacity opacity-0 opacity-100"
-                      src="https://scontent.cdninstagram.com/v/t51.29350-15/212689908_514294163022464_2501558870236423530_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=rQnZH-cPIKEAX-390oi&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfCTNSFrjVviecFo85rtBVB4URvyzGRxKmwHf6JslmzMCQ&amp;oe=64D9E76A&amp;width=300"
+                      src="../dist/images/follow-ig3.png"
                       loading="lazy"
-                      alt="instagram-image-minimog.main3-18164038645147528"
-                      style="" /></div
+                      alt="instagram-image-minimog.main3-18164038645147528" /></div
                   ><div class="sf__item-bg"></div></a></div
               ><div class="sf-column"
                 ><a
@@ -872,10 +871,9 @@
                   ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
                     ><img
                       class="transition-opacity opacity-0 opacity-100"
-                      src="https://scontent.cdninstagram.com/v/t51.29350-15/212393793_128297782785197_7412881403264669135_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=GK6Pz9knzzQAX8ipYFe&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBt_ePNMz1MQZOF_Ilv0jzzkas-66_FBihTJAN_tDBw6g&amp;oe=64DA8DEB&amp;width=300"
+                      src="../dist/images/follow-ig4.png"
                       loading="lazy"
-                      alt="instagram-image-minimog.main3-17995552492355459"
-                      style="" /></div
+                      alt="instagram-image-minimog.main3-17995552492355459" /></div
                   ><div class="sf__item-bg"></div></a></div
               ><div class="sf-column"
                 ><a
@@ -897,7 +895,7 @@
                   ><div class="sf__insta-image" style="--aspect-ratio: 1/1"
                     ><img
                       class="transition-opacity opacity-0 opacity-100"
-                      src="https://scontent.cdninstagram.com/v/t51.29350-15/212524229_4101822023272462_1544893675996977246_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ngA-VIAWgZoAX-W3q1q&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBF653AwT3p3sGe1wT_vEy3bH4yeC1AsW9lcjDqHKrI1Q&amp;oe=64D97666&amp;width=300"
+                      src="../dist/images/follow-ig5.png"
                       loading="lazy"
                       alt="instagram-image-minimog.main3-17844069482619545" /></div
                   ><div class="sf__item-bg"></div></a></div
