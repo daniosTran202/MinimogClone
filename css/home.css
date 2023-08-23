@@ -649,16 +649,54 @@ body .sf-footer__block .social-media-links a {
 .sf__ms {
   display: block;
 }
-.sf__insta-item {
+/* .sf__insta-item {
   display: block;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+
+.sf__insta-item [style*="--aspect-ratio"]:before {
+  padding-top: calc(100% / (0.0001 + var(--aspect-ratio, 16/9)));
+}
+.sf__insta-item [style*="--aspect-ratio"]:before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  height: 0px;
+}
+.sf__insta-item [style*="--aspect-ratio"] {
   position: relative;
   overflow: hidden;
 }
+.sf__insta-item [style*="--aspect-ratio"] > *:first-child {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute !important;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .sf__insta-item .sf__insta-image img {
   transform: scale(1.06);
   transform-origin: center;
   transition: transform 0.64s ease;
   will-change: transform;
+}
+
+.sf__insta-item .sf__insta-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
 }
 
 .sf__insta-item .sf__insta-content .sf__insta-icon {
@@ -707,7 +745,8 @@ body .sf-footer__block .social-media-links a {
 }
 
 .sf-column {
-  padding: 0 calc(var(--column-gap) / 2) var(--row-gap, var(--column-gap));
+  display: block;
+  padding: 0 calc(var(--column-gap) / 2);
 }
 @media screen and (min-width: 1280px) {
   .xl\:grid-cols-5 {
@@ -733,9 +772,11 @@ body .sf-footer__block .social-media-links a {
 }
 .section__description {
   color: #666666;
-  font-size: calc(var(--font-base-size, 16) * 1px);
+  font-size: 15px;
   margin-top: 1rem;
   line-height: 1.5rem !important;
+
+  font-weight: 300;
 }
 
 .section__description a {
@@ -979,8 +1020,8 @@ responsive-image {
 }
 
 .flex__shopNow {
-  position: relative;
-  bottom: 3rem;
+  position: absolute;
+  bottom: 40px;
   left: 0;
   right: 0;
   z-index: 29;
