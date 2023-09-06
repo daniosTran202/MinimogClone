@@ -97,3 +97,20 @@ var swiper = new Swiper(".slide-mini-product", {
     },
   },
 });
+
+window.onscroll = function () {
+  if (pageYOffset >= 200) {
+    document.getElementById("scroll-to-top-button").style.visibility =
+      "visible";
+  } else {
+    document.getElementById("scroll-to-top-button").style.visibility = "hidden";
+  }
+};
+
+document.getElementById("scroll-to-top-button").onclick = function () {
+  window.scrollTo({
+    top: 100,
+    left: 100,
+    behavior: "smooth",
+  });
+};
