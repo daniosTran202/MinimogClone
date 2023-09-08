@@ -110,7 +110,6 @@ window.onscroll = function () {
 document.getElementById("scroll-to-top-button").onclick = function () {
   window.scrollTo({
     top: 0,
-    left: 100,
     behavior: "smooth",
   });
 };
