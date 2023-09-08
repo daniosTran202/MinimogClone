@@ -631,6 +631,55 @@ video {
   width: 100%;
 }
 
+.text-color-regular-price {
+  color: #000;
+}
+.font-normal {
+  font-weight: 400;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.mr-\[-1rem\] {
+  margin-right: -1rem;
+}
+
+#sf-slider-controls-31481022-f698-4968-bf06-3c24f36b09e7 {
+  border: none;
+}
+#sf-slider-controls-31481022-f698-4968-bf06-3c24f36b09e7 button {
+  align-items: center;
+  border-color: #eeeeee;
+  box-shadow: none;
+  color: currentColor;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 50px;
+  justify-content: center;
+  outline: none;
+  padding: 0;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  width: 50px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  #sf-slider-controls-31481022-f698-4968-bf06-3c24f36b09e7 button:hover {
+    background: #000000;
+    border-color: #000000;
+    box-shadow: 0 0 0 0.1rem #000000;
+    color: #fff;
+  }
+}
+
 @media (min-width: 1536px) {
   .sf-menu-item > a {
     padding: 29px 20px;

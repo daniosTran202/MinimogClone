@@ -98,6 +98,27 @@ var swiper = new Swiper(".slide-mini-product", {
   },
 });
 
+var swiper = new Swiper(".slider-menu-product", {
+  slidesPerView: 2,
+  sliderPerGroup: 3,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  navigation: {
+    nextEl: ".sf-slider__controls-next",
+    prevEl: ".sf-slider__controls-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+  },
+});
+
 window.onscroll = function () {
   if (pageYOffset >= 200) {
     document.getElementById("scroll-to-top-button").style.visibility =
